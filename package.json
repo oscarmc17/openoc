@@ -1,0 +1,20 @@
+{
+  "name": "omc-test-package",
+  "version": "1.0.0",
+  "description": "learning-chatgpt",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarmc17/openoc.git"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarmc17/openoc/issues"
+  },
+  "homepage": "https://github.com/oscarmc17/openoc#readme"
+}
