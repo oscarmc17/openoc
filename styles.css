@@ -34,4 +34,30 @@ h1{
     text-align: center;
     justify-content: space-between;
     height: 100vh;
+    width: 100%;
+}
+
+.info{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    padding: 10px;
+
+}
+
+.input {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: rgb(0,0,0,0.05) 0 54px 55px,
+    rgb(0,0,0,0.05) 0 -12px 30px,
+    rgb(0,0,0,0.05) 0 4px 6px,
+    rgb(0,0,0,0.05) 0 12px 13px,
+    rgb(0,0,0,0.09) 0 -3px 55px,
+}
+
+input:focus{
+    outline: none;
 }
