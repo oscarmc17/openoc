@@ -1,22 +1,20 @@
 import { API_KEY } from "./config.js";
 
 async function fetchData(){
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    const response = await fetch("https://api.openai.com/v1/completions", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "gpt-4",
-        messages: [{
-            role: "user",
-            content: "Hello!",
-          },],
-      }),
+        model: "text-davinci-003",
+        prompt: "How are you doing today this fine evening?",
+        max_tokens: 7
+      })
     });
     const data = await response.json()
     console.log(data)
 }
 
-fetchData()
+fetchData();
