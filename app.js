@@ -20,6 +20,8 @@ import { API_KEY } from "./config.js";
 // fetchData();
 
 const submitButton = document.querySelector('#submit')
+const outputElement = document.querySelector('#output')
+
 
 async function getMessage() {
   console.log('clicked')
@@ -39,6 +41,7 @@ async function getMessage() {
     const response = await fetch('https://api.openai.com/v1/completions', options)
     const data = await response.json()
     console.log(data)
+    outputElement.textContent = data.choice[0].message.content;
   } catch (error) {
     console.log(error)
   }
